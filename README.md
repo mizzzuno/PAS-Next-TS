@@ -35,7 +35,7 @@ pas-next-ts/
 │   │   └── layout.tsx         # ルートレイアウト
 │   └── components/            # 共通コンポーネント
 │       ├── Footer.tsx
-│       └── HamburgerMenue.tsx
+│       └── HamburgerMenu.tsx
 ├── eslint.config.mjs         # ESLint設定
 ├── middleware.ts             # Next.js ミドルウェア
 ├── next.config.ts            # Next.js設定
@@ -74,25 +74,58 @@ npm run build
 ```
 
 ---
+
 ## Rules
 
 **開発の進め方**
 
-1. 名付けルールに沿ってブランチを作成
+1. 命名ルールに沿ってブランチを作成
 2. 各ブランチで開発
-3. エラーチェック(npm run build)
-4. Pull Reqest作成
+3. エラーチェック(npm run build の成功が必須)
+4. Pull Reqest 作成
 5. 管理者(ミズノワタル)がレビュー&マージ
 
-注意 mainブランチへの変更は禁止です。(できないと思います。)
+注意 main ブランチへの変更は禁止です。(できないと思います。)
 
 ---
-**ブランチ　名付け** 
 
-変更内容-名前
+**ブランチ命名ルール**
 
-例  
+### 基本形式
 
-    RunButton-mizuno
-    
-    HomePage-mizuno
+`種類/内容-開発者名`
+
+### ブランチの種類
+
+- `feature/` : 新機能の追加
+- `fix/` : バグ修正
+- `refactor/` : リファクタリング
+- `style/` : スタイル変更（機能に影響しない）
+- `docs/` : ドキュメント更新
+- `test/` : テスト追加・修正
+
+### 命名例
+
+```
+feature/login-page-mizuno
+fix/header-layout-mizuno
+refactor/components-structure-mizuno
+style/button-design-mizuno
+docs/readme-update-mizuno
+test/user-authentication-mizuno
+```
+
+### 注意事項
+
+- 全て小文字で記述
+- 単語間は`-`（ハイフン）で区切る
+- 内容は英語で簡潔に表現
+- 開発者名は必須
+
+---
+
+**コンポーネント命名ルール**
+
+- **コンポーネントファイル名は必ず大文字で開始する**
+
+例: `LoginButton.tsx`, `UserProfile.tsx`, `HomePage.tsx`
