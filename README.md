@@ -97,7 +97,7 @@ npm run build
 
    ```bash
    git add .
-   git status   余分なファイルがステージングされていないかを確認
+   git status     <-余分なファイルがステージングされていないかを確認
    git commit -m "適切なコミットメッセージ"
    git push origin ブランチ名
    ```
