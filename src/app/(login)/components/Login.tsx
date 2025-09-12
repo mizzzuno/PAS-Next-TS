@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Footer from '../../../components/Footer' //追加
 import Image from "next/image";
 
 export default function Login({ mode = 'signin' }: { mode?: 'signin' | 'signup' }) {
@@ -109,7 +110,9 @@ export default function Login({ mode = 'signin' }: { mode?: 'signin' | 'signup' 
         </div>
       </div>
 
-      {/* フッター */}
+{ /* -----修正箇所----- */ }
+
+      {/* フッター 
       <footer className="bg-gray-100 py-4 text-center mt-auto">
         <span className="text-gray-500">卒研：2025</span>
         <span className="text-gray-500 mx-2">|</span>
@@ -118,6 +121,8 @@ export default function Login({ mode = 'signin' }: { mode?: 'signin' | 'signup' 
         <span className="text-gray-500 mx-2">|</span>
         <span>ABCDE FGH IJKL (アイウエ オカ)</span>
       </footer>
+      */}
+{ /* -----ここまで-----*/ }
     </div>
   );
 }
