@@ -6,13 +6,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    //<html lang="en"> 元コード
-    <html lang="ja" suppressHydrationWarning>
-      {/*追加*/}
-      <head>
-        <meta name="google" content="notranslate" />
-      </head>
-      {/*ここまで*/}
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
