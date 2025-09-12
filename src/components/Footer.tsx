@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 
 export default function Footer(){
@@ -12,4 +11,5 @@ export default function Footer(){
         <span>ABCDE FGH IJKL (アイウエ オカ)</span>
     </footer>
     );
+
 }
