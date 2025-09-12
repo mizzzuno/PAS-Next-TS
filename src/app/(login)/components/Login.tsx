@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Footer from '../../../components/Footer' //追加
 import Image from "next/image";
 
 export default function Login({ mode = 'signin' }: { mode?: 'signin' | 'signup' }) {
